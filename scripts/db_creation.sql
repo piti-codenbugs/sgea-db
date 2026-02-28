@@ -1,4 +1,4 @@
-CREATE DATABASE segea_db
+CREATE DATABASE sgea_db
     WITH
     ENCODING = 'UTF8'
     LC_COLLATE = 'es_ES.UTF-8'
