@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
   <diagram name="Página-1" id="EB7jo387qSEGLOV_oeQZ">
-    <mxGraphModel dx="1187" dy="1857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1665" dy="1997" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -385,7 +385,7 @@
             <mxRectangle height="30" width="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PqtXdtpJfstCb-Lpa_2C-11" parent="PqtXdtpJfstCb-Lpa_2C-9" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" value="codigo&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SMALLINT &lt;/span&gt;&lt;span class=&quot;mexSqb&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PRIMARY&lt;/span&gt;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mexSqb&quot; aria-owns=&quot;action-menu-parent-container&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;KEY&lt;/span&gt;" vertex="1">
+        <mxCell id="PqtXdtpJfstCb-Lpa_2C-11" parent="PqtXdtpJfstCb-Lpa_2C-9" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" value="codigo&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SMALLINT &lt;/span&gt;&lt;span class=&quot;mexSqb&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PRIMARY&lt;/span&gt;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mexSqb&quot; aria-owns=&quot;action-menu-parent-container&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;KEY&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="371" x="60" as="geometry">
             <mxRectangle height="30" width="371" as="alternateBounds" />
           </mxGeometry>
@@ -398,7 +398,7 @@
             <mxRectangle height="30" width="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PqtXdtpJfstCb-Lpa_2C-14" parent="PqtXdtpJfstCb-Lpa_2C-12" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" value="id_docente&amp;nbsp; &amp;nbsp; SMALLINT NOT NULL" vertex="1">
+        <mxCell id="PqtXdtpJfstCb-Lpa_2C-14" parent="PqtXdtpJfstCb-Lpa_2C-12" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" value="id_docente&amp;nbsp; &amp;nbsp; BIGINT NOT NULL" vertex="1">
           <mxGeometry height="30" width="371" x="60" as="geometry">
             <mxRectangle height="30" width="371" as="alternateBounds" />
           </mxGeometry>
@@ -443,7 +443,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PqtXdtpJfstCb-Lpa_2C-31" parent="PqtXdtpJfstCb-Lpa_2C-29" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Id_carrera SMALLINT AUTO INCREMENT" vertex="1">
+        <mxCell id="PqtXdtpJfstCb-Lpa_2C-31" parent="PqtXdtpJfstCb-Lpa_2C-29" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Id_carrera SMALLSERIAL AUTO INCREMENT" vertex="1">
           <mxGeometry height="30" width="277" x="30" as="geometry">
             <mxRectangle height="30" width="277" as="alternateBounds" />
           </mxGeometry>
