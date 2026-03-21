@@ -27,16 +27,26 @@ usuarios_insertados AS (
     ) AS u(rol_nombre, email, password, nombres, apellidos, fecha, activo)
     JOIN roles_insertados r ON r.nombre = u.rol_nombre
     RETURNING id_usuario, id_rol
+),
+
+usuarios_con_rol AS (
+    SELECT ui.id_usuario, r.nombre AS rol_nombre
+    FROM usuarios_insertados ui
+    JOIN roles_insertados r ON r.id_rol = ui.id_rol
+),
+
+insert_docente AS (
+    INSERT INTO docente (id_usuario)
+    SELECT id_usuario
+    FROM usuarios_con_rol
+    WHERE rol_nombre = 'ROLE_PROFESSOR'
+),
+
+insert_estudiante AS (
+    INSERT INTO estudiante (id_usuario, carnet)
+    SELECT id_usuario, 200000002
+    FROM usuarios_con_rol
+    WHERE rol_nombre = 'ROLE_STUDENT'
 )
 
-INSERT INTO docente (id_usuario)
-SELECT id_usuario
-FROM usuarios_insertados ui
-JOIN rol r ON r.id_rol = ui.id_rol
-WHERE r.nombre = 'ROLE_PROFESSOR';
-
-INSERT INTO estudiante (id_usuario, carnet)
-SELECT id_usuario, 200000002
-FROM usuarios_insertados ui
-JOIN rol r ON r.id_rol = ui.id_rol
-WHERE r.nombre = 'ROLE_STUDENT';
+SELECT 1;
